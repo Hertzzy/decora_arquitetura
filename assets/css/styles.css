@@ -1,0 +1,115 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.c-item {
+  height: 480px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.navbar {
+  margin: 5px 70px;
+  border-radius: 8px;
+}
+
+.btn-outline-secondary:hover {
+  color: white !important;
+  background-color: black !important;
+  border-color: black !important;
+}
+
+.modal-body p {
+  font-size: 14px;
+}
+
+.nav-link.text-secondary:hover,
+.nav-link.text-secondary.active {
+  position: relative;
+  color: black !important;
+  font-weight: bolder;
+}
+
+.btn-outline-secondary:hover {
+  color: white !important;
+  background-color: black !important;
+  border-color: black !important;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+  color: black;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Empresas parceiras */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: transparent;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 217px;
+  height: 100%;
+  content: '';
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 100s slide infinite linear;
+  margin: 20px 0 0 0;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+  cursor: pointer;
+}
+
+.logos-slide img.ginomoto_logo {
+  height: 25px;
+}

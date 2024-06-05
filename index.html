@@ -1,160 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <title>Grupo Decora | Home</title>
-</head>
-<body>
-  <!-- MENU NAVBAR -->
-  <div class="container">
-    <nav class="navbar navbar-expand-lg fixed-top px-4 bg-light" id="navbar">
-      <a class="navbar-brand" href="https://www.decoragrupo.com.br" title="Grupo Decora">
-        <img src="./assets/logo/logo_decora.png" width="150" alt="Logo Grupo Decora" style="filter: brightness(0) invert(0)" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- LINK BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- LINK SCRIPT BOOTSTRAP -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+    <!-- LINK GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LINK STYLES -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>Grupo Decora | Home</title>
+  </head>
+  <body>
+    <!-- MENU NAVBAR -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg fixed-top px-4 bg-white" id="navbar">
+        <a class="navbar-brand" href="https://www.decoragrupo.com.br" title="Grupo Decora">
+          <img
+            src="./assets/logo/logo_decora.png"
+            width="150"
+            alt="Logo Grupo Decora"
+            style="filter: brightness(0) invert(0)"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <a class="navbar-brand" href="/index.html" title="Grupo Decora">
+                <img
+                  src="./assets/logo/logo_decora.png"
+                  width="200"
+                  alt="Logo Grupo Decora"
+                  style="filter: brightness(0) invert(0)"
+                />
+              </a>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body justify-content-end" id="navbarScroll">
+            <ul class="navbar-nav navbar-nav-scroll" style="--bs-scroll-height: 100px">
+              <li class="nav-item active">
+                <a class="nav-link text-secondary fw-normal active" href="/index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary fw-normal" href="/eventos.html">EVENTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary fw-normal" href="/sobrenos.html">SOBRE NÓS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary fw-normal" href="/contato.html">CONTATO</a>
+              </li>
+            </ul>
+            <a class="btn btn-outline-secondary rounded-0" href="https://www.decoragrupo.com.br/cadastro"
+              >CADASTRE-SE</a
+            >
+            <a
+              class="btn btn-outline-secondary rounded-0 ms-2"
+              href=""
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+              >LOGIN</a
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- HERO CAROUSEL -->
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img
+            src="/assets/imgs/pexels-bhargava-marripati-674798-1569012.jpg"
+            class="d-block w-100 c-img"
+            alt="Experiência Decora | Chicago 2025"
+          />
+          <div class="carousel-caption top-1 mb-4">
+            <h1 class="fs-2 text-white text-white">Experiência Decora | Chicago 2025</h1>
+            <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalChicago">
+              Saiba mais
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item">
+          <img src="/assets/imgs/sao_luis.jpg" class="d-block w-100 c-img" alt="Experiência Decora | São Luís - MA" />
+          <div class="carousel-caption top-1 mb-4">
+            <h1 class="fs-2 text-white">Experiência Decora | São Luís - MA</h1>
+            <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalSaoLuis">
+              Saiba mais
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item">
+          <img src="/assets/imgs/belasco.jpg" class="d-block w-100 c-img" alt="Experiência Decora | Mendoza 2025" />
+          <div class="carousel-caption top-1 mb-4">
+            <h1 class="fs-2 text-white">Experiência Decora | Mendoza 2025</h1>
+            <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalMendoza">
+              Saiba mais
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item">
+          <img
+            src="/assets/imgs/cascorrio.jpg"
+            class="d-block w-100 c-img"
+            alt="Experiência Decora | Casa Cor Rio 2025"
+          />
+          <div class="carousel-caption top-1 mb-4">
+            <h1 class="fs-2 mt-12 text-white">Experiência Decora | Casa Cor Rio 2025</h1>
+            <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalCasaCorRio">
+              Saiba mais
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-            <a class="navbar-brand" href="/index.html" title="Grupo Decora">
-              <img src="./assets/logo/logo_decora.png" width="200" alt="Logo Grupo Decora" style="filter: brightness(0) invert(0)" />
-            </a>
-          </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body justify-content-end" id="navbarScroll">
-          <ul class="navbar-nav navbar-nav-scroll" style="--bs-scroll-height: 100px">
-            <li class="nav-item active">
-              <a class="nav-link text-secondary fw-normal active" href="/index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-secondary fw-normal" href="/eventos.html">EVENTOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-secondary fw-normal" href="/contato.html">SOBRE NÓS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-secondary fw-normal" href="/contato.html">CONTATO</a>
-            </li>
-          </ul>
-          <a class="btn btn-outline-secondary rounded-0" href="https://www.decoragrupo.com.br/cadastro">CADASTRE-SE</a>
-          <a class="btn btn-outline-secondary rounded-0 ms-2" href="" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</a>
-        </div>
-      </div>
-    </nav>
-  </div>
-
-  <!-- HERO CAROUSEL -->
-  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <div class="carousel-inner">
-      <div class="carousel-item active c-item">
-        <img src="/assets/imgs/pexels-bhargava-marripati-674798-1569012.jpg" class="d-block w-100 c-img" alt="Experiência Decora | Chicago 2025">
-        <div class="carousel-caption top-1 mb-4">
-          <h1 class="fs-2 mt-12">Experiência Decora | Chicago 2025</h1>
-          <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalChicago">Saiba mais</button>
-        </div>
-      </div>
-
-      <div class="carousel-item c-item">
-        <img src="/assets/imgs/sao_luis.jpg" class="d-block w-100 c-img" alt="Experiência Decora | São Luís - MA">
-        <div class="carousel-caption top-1 mb-4">
-          <h1 class="fs-2 mt-12">Experiência Decora | São Luís - MA</h1>
-          <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalSaoLuis">Saiba mais</button>
-        </div>
-      </div>
-
-      <div class="carousel-item c-item">
-        <img src="/assets/imgs/belasco.jpg" class="d-block w-100 c-img" alt="Experiência Decora | Mendoza 2025">
-        <div class="carousel-caption top-1 mb-4">
-          <h1 class="fs-2 mt-12">Experiência Decora | Mendoza 2025</h1>
-          <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalMendoza">Saiba mais</button>
-        </div>
-      </div>
-
-      <div class="carousel-item c-item">
-        <img src="/assets/imgs/cascorrio.jpg" class="d-block w-100 c-img" alt="Experiência Decora | Casa Cor Rio 2025">
-        <div class="carousel-caption top-1 mb-4">
-          <h1 class="fs-2 mt-12">Experiência Decora | Casa Cor Rio 2025</h1>
-          <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalCasaCorRio">Saiba mais</button>
-        </div>
-      </div>
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <!-- MODAIS -->
-  <!-- Modal Chicago -->
-  <div class="modal fade" id="modalChicago" tabindex="-1" aria-labelledby="modalChicagoLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalChicagoLabel">Experiência Decora | Chicago 2025</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <H6>REGULAMENTO EXPERIÊNCIA DECORA | CHICAGO</H6>
-          <p class="">O Grupo Decora realiza constantemente experiências culturais, arquitetônicas e sensoriais com o objetivo de contribuir intelectualmente com a carreira de profissionais de arquitetura e decoração, as experiências não tem fins comerciais. Os recursos investidos são destinados pelas empresas como verba de marketing e as pontuações geradas não impactam as propostas de clientes de profissionais e associados. <br>
-          Com a realização de ações recorrentes estamos buscando o desenvolvimento intelectual do segmento de arquitetura e decoração para que clientes tenham projetos, produtos e serviços cada vez melhores. O Grupo Decora acredita que o conhecimento de novas culturas e lugares atua diretamente na transformação e evolução do mercado e cada empresa associada investe na jornada do cliente em seus espaços para alcançar a excelência desde o atendimento até o pós-venda.</p>
-          <H6>
-            Regulamento Decora | Chicago
-          </H6>
-          <p>Todos os profissionais que atingirem 23.000 pontos entre 01/01/24 e 31/12/24 participarão da Experiência Decora | Chicago;</p>
+    <!-- MODAIS -->
+    <!-- Modal Chicago -->
+    <div class="modal fade" id="modalChicago" tabindex="-1" aria-labelledby="modalChicagoLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalChicagoLabel">Experiência Decora | Chicago 2025</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>REGULAMENTO EXPERIÊNCIA DECORA | CHICAGO</h6>
+            <p class="">
+              O Grupo Decora realiza constantemente experiências culturais, arquitetônicas e sensoriais com o objetivo
+              de contribuir intelectualmente com a carreira de profissionais de arquitetura e decoração, as experiências
+              não tem fins comerciais. Os recursos investidos são destinados pelas empresas como verba de marketing e as
+              pontuações geradas não impactam as propostas de clientes de profissionais e associados. <br />
+              Com a realização de ações recorrentes estamos buscando o desenvolvimento intelectual do segmento de
+              arquitetura e decoração para que clientes tenham projetos, produtos e serviços cada vez melhores. O Grupo
+              Decora acredita que o conhecimento de novas culturas e lugares atua diretamente na transformação e
+              evolução do mercado e cada empresa associada investe na jornada do cliente em seus espaços para alcançar a
+              excelência desde o atendimento até o pós-venda.
+            </p>
+            <h6>Regulamento Decora | Chicago</h6>
+            <p>
+              Todos os profissionais que atingirem 23.000 pontos entre 01/01/24 e 31/12/24 participarão da Experiência
+              Decora | Chicago;
+            </p>
             <p>• A viagem será realizada até dezembro de 2025, podendo ter data alterada sem prévio aviso;</p>
             <p>• A viagem terá duração de 6 dias e 5 noites;</p>
             <p>• Somente o profissional contemplado poderá participar do evento;</p>
             <p>• Incluso na viagem: traslados, passagem aérea de ida e volta e hospedagem (quartos duplos);</p>
             <p>• A viagem NÃO INCLUI acompanhante;</p>
-            <p> • O profissional deverá alcançar no mínimo 23.000 pontos no total, circulando no mínimo em 6 empresas associadas;</p>
+            <p>
+              • O profissional deverá alcançar no mínimo 23.000 pontos no total, circulando no mínimo em 6 empresas
+              associadas;
+            </p>
             <p>• Não será contabilizada nenhuma pontuação lançada após o dia 10/01/25, ainda que justificada.</p>
             <p>• Os pontos serão resgatados da grade de premiação.</p>
+          </div>
         </div>
-        
       </div>
     </div>
-  </div>
 
-  <!-- Modal São Luís -->
-  <div class="modal fade" id="modalSaoLuis" tabindex="-1" aria-labelledby="modalSaoLuisLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalSaoLuisLabel">Experiência Decora | São Luís - MA</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <H6>REGULAMENTO EXPERIÊNCIA DECORA | SÃO LUÍS - MA</H6>
-          <p>O Grupo Decora realiza constantemente experiências culturais, arquitetônicas e sensoriais com o objetivo de contribuir intelectualmente com a carreira de profissionais de arquitetura e decoração, as experiências não tem fins comerciais. Os recursos investidos são destinados pelas empresas como verba de marketing e as pontuações geradas não impactam as propostas de clientes de profissionais e associados. <br>
-          Com a realização de ações recorrentes estamos buscando o desenvolvimento intelectual do segmento de arquitetura e decoração para que clientes tenham projetos, produtos e serviços cada vez melhores. O Grupo Decora acredita que o conhecimento de novas culturas e lugares atua diretamente na transformação e evolução do mercado e cada empresa associada investe na jornada do cliente em seus espaços para alcançar a excelência desde o atendimento até o pós-venda.
-          </p>
-          <H6>
-            Regulamento Decora | São Luis - MA
-          </H6>
-          <p>Todos os profissionais que atingirem 23.000 pontos entre 01/01/24 e 31/12/24 participarão da Experiência Decora | Chicago;</p>
-            <p>• Os 6 profissionais mais pontuados entre 01/05/24 e 30/09/24 participarão da Experiência Decora | São Luís - MA;</p>
+    <!-- Modal São Luís -->
+    <div class="modal fade" id="modalSaoLuis" tabindex="-1" aria-labelledby="modalSaoLuisLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalSaoLuisLabel">Experiência Decora | São Luís - MA</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>REGULAMENTO EXPERIÊNCIA DECORA | SÃO LUÍS - MA</h6>
+            <p>
+              O Grupo Decora realiza constantemente experiências culturais, arquitetônicas e sensoriais com o objetivo
+              de contribuir intelectualmente com a carreira de profissionais de arquitetura e decoração, as experiências
+              não tem fins comerciais. Os recursos investidos são destinados pelas empresas como verba de marketing e as
+              pontuações geradas não impactam as propostas de clientes de profissionais e associados. <br />
+              Com a realização de ações recorrentes estamos buscando o desenvolvimento intelectual do segmento de
+              arquitetura e decoração para que clientes tenham projetos, produtos e serviços cada vez melhores. O Grupo
+              Decora acredita que o conhecimento de novas culturas e lugares atua diretamente na transformação e
+              evolução do mercado e cada empresa associada investe na jornada do cliente em seus espaços para alcançar a
+              excelência desde o atendimento até o pós-venda.
+            </p>
+            <h6>Regulamento Decora | São Luis - MA</h6>
+            <p>
+              Todos os profissionais que atingirem 23.000 pontos entre 01/01/24 e 31/12/24 participarão da Experiência
+              Decora | Chicago;
+            </p>
+            <p>
+              • Os 6 profissionais mais pontuados entre 01/05/24 e 30/09/24 participarão da Experiência Decora | São
+              Luís - MA;
+            </p>
             <p>• Além dos 6 mais pontuados, teremos duas (02) vagas para profissionais de Rio Claro;</p>
             <p>• A viagem será realizada no mês de novembro, podendo ter data alterada sem prévio aviso;</p>
             <p>• A viagem terá duração de 4 dias e 3 noites;</p>
@@ -164,74 +258,148 @@
             <p>• O profissional deverá alcançar no mínimo 9.600 pontos no total, pontuando em 8 empresas parceiras;</p>
             <p>• Não será contabilizada nenhuma pontuação lançada após o dia 10/10/24, ainda que justificada.</p>
             <p>• Os pontos NÃO serão resgatados da grade de premiação.</p>
+          </div>
         </div>
-        
       </div>
     </div>
-  </div>
 
-  <!-- Modal Mendoza -->
-  <div class="modal fade" id="modalMendoza" tabindex="-1" aria-labelledby="modalMendozaLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalMendozaLabel">Experiência Decora | Mendoza 2025</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <H6>REGULAMENTO EXPERIÊNCIA DECORA | MENDOZA</H6>
-          <p class="">O Grupo Decora realiza constantemente experiências culturais, arquitetônicas e sensoriais com o objetivo de contribuir intelectualmente com a carreira de profissionais de arquitetura e decoração, as experiências não tem fins comerciais. Os recursos investidos são destinados pelas empresas como verba de marketing e as pontuações geradas não impactam as propostas de clientes de profissionais e associados.
-          Com a realização de ações recorrentes estamos buscando o desenvolvimento intelectual do segmento de arquitetura e decoração para que clientes tenham projetos, produtos e serviços cada vez melhores. O Grupo Decora acredita que o conhecimento de novas culturas e lugares atua diretamente na transformação e evolução do mercado e cada empresa associada investe na jornada do cliente em seus espaços para alcançar a excelência desde o atendimento até o pós-venda.
-          </p>
-          <H6>
-            Regulamento Decora | Mendoza
-          </H6>
-          <p>Todos os profissionais que atingirem 23.000 pontos entre 01/01/24 e 31/12/24 participarão da Experiência Decora | Chicago;</p>
+    <!-- Modal Mendoza -->
+    <div class="modal fade" id="modalMendoza" tabindex="-1" aria-labelledby="modalMendozaLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalMendozaLabel">Experiência Decora | Mendoza 2025</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>REGULAMENTO EXPERIÊNCIA DECORA | MENDOZA</h6>
+            <p class="">
+              O Grupo Decora realiza constantemente experiências culturais, arquitetônicas e sensoriais com o objetivo
+              de contribuir intelectualmente com a carreira de profissionais de arquitetura e decoração, as experiências
+              não tem fins comerciais. Os recursos investidos são destinados pelas empresas como verba de marketing e as
+              pontuações geradas não impactam as propostas de clientes de profissionais e associados. Com a realização
+              de ações recorrentes estamos buscando o desenvolvimento intelectual do segmento de arquitetura e decoração
+              para que clientes tenham projetos, produtos e serviços cada vez melhores. O Grupo Decora acredita que o
+              conhecimento de novas culturas e lugares atua diretamente na transformação e evolução do mercado e cada
+              empresa associada investe na jornada do cliente em seus espaços para alcançar a excelência desde o
+              atendimento até o pós-venda.
+            </p>
+            <h6>Regulamento Decora | Mendoza</h6>
+            <p>
+              Todos os profissionais que atingirem 23.000 pontos entre 01/01/24 e 31/12/24 participarão da Experiência
+              Decora | Chicago;
+            </p>
             <p>• A viagem será realizada até dezembro de 2025, podendo ter data alterada sem prévio aviso;</p>
             <p>• A viagem terá duração de 4 dias e 3 noites;</p>
             <p>• Somente o profissional contemplado poderá participar do evento;</p>
             <p>• Incluso na viagem: traslados, passagem aérea de ida e volta e hospedagem (quartos duplos);</p>
             <p>• A viagem NÃO INCLUI acompanhante;</p>
-            <p>• O profissional deverá alcançar no mínimo 12.000 pontos no total, circulando no mínimo em 6 empresas associadas;</p>
+            <p>
+              • O profissional deverá alcançar no mínimo 12.000 pontos no total, circulando no mínimo em 6 empresas
+              associadas;
+            </p>
             <p>• Não será contabilizada nenhuma pontuação lançada após o dia 10/01/25, ainda que justificada.</p>
             <p>• Os pontos serão resgatados da grade de premiação.</p>
+          </div>
         </div>
-        
       </div>
     </div>
-  </div>
 
-  <!-- Modal Casa Cor Rio -->
-  <div class="modal fade" id="modalCasaCorRio" tabindex="-1" aria-labelledby="modalCasaCorRioLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalCasaCorRioLabel">Experiência Decora | Casa Cor Rio 2025</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <H6>REGULAMENTO EXPERIÊNCIA DECORA | CASA COR RIO</H6>
-          <p class="">O Grupo Decora realiza constantemente experiências culturais, arquitetônicas e sensoriais com o objetivo de contribuir intelectualmente com a carreira de profissionais de arquitetura e decoração, as experiências não tem fins comerciais. Os recursos investidos são destinados pelas empresas como verba de marketing e as pontuações geradas não impactam as propostas de clientes de profissionais e associados. <br>
-          Com a realização de ações recorrentes estamos buscando o desenvolvimento intelectual do segmento de arquitetura e decoração para que clientes tenham projetos, produtos e serviços cada vez melhores. O Grupo Decora acredita que o conhecimento de novas culturas e lugares atua diretamente na transformação e evolução do mercado e cada empresa associada investe na jornada do cliente em seus espaços para alcançar a excelência desde o atendimento até o pós-venda.
-          </p>
-          <H6>
-            Regulamento Decora | Casa Cor Rio
-          </H6>
-          <p>• Todos os profissionais que atingirem 6.000 pontos entre 01/01/24 e 31/12/24 participarão da Experiência Decora | Casa Cor Rio;</p>
-            <p> A viagem será realizada até dezembro de 2025, podendo ter data alterada sem prévio aviso;/p>
+    <!-- Modal Casa Cor Rio -->
+    <div
+      class="modal fade"
+      id="modalCasaCorRio"
+      tabindex="-1"
+      aria-labelledby="modalCasaCorRioLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalCasaCorRioLabel">Experiência Decora | Casa Cor Rio 2025</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>REGULAMENTO EXPERIÊNCIA DECORA | CASA COR RIO</h6>
+            <p class="">
+              O Grupo Decora realiza constantemente experiências culturais, arquitetônicas e sensoriais com o objetivo
+              de contribuir intelectualmente com a carreira de profissionais de arquitetura e decoração, as experiências
+              não tem fins comerciais. Os recursos investidos são destinados pelas empresas como verba de marketing e as
+              pontuações geradas não impactam as propostas de clientes de profissionais e associados. <br />
+              Com a realização de ações recorrentes estamos buscando o desenvolvimento intelectual do segmento de
+              arquitetura e decoração para que clientes tenham projetos, produtos e serviços cada vez melhores. O Grupo
+              Decora acredita que o conhecimento de novas culturas e lugares atua diretamente na transformação e
+              evolução do mercado e cada empresa associada investe na jornada do cliente em seus espaços para alcançar a
+              excelência desde o atendimento até o pós-venda.
+            </p>
+            <h6>Regulamento Decora | Casa Cor Rio</h6>
+            <p>
+              • Todos os profissionais que atingirem 6.000 pontos entre 01/01/24 e 31/12/24 participarão da Experiência
+              Decora | Casa Cor Rio;
+            </p>
+            <p>A viagem será realizada até dezembro de 2025, podendo ter data alterada sem prévio aviso;/p></p>
             <p>• A viagem terá duração de 3 dias e 2 noites;</p>
             <p>• Somente o profissional contemplado poderá participar do evento;</p>
             <p>• Incluso na viagem: traslados, passagem aérea de ida e volta e hospedagem (quartos duplos);</p>
             <p>• A viagem NÃO INCLUI acompanhante;</p>
-            <p>• O profissional deverá alcançar no mínimo 6.000 pontos no total, circulando no mínimo em 6 empresas associadas;</p>
+            <p>
+              • O profissional deverá alcançar no mínimo 6.000 pontos no total, circulando no mínimo em 6 empresas
+              associadas;
+            </p>
             <p>• Não será contabilizada nenhuma pontuação lançada após o dia 10/01/25, ainda que justificada.</p>
             <p>• Os pontos serão resgatados da grade de premiação.</p>
+          </div>
         </div>
-        
       </div>
     </div>
-  </div>
 
-  
-</body>
+    <!-- COMPANIES -->
+    <div class="logos text-center">
+      <h1 class="fs-2 text-secondary">EMPRESAS PARCEIRAS</h1>
+      <div class="logos-slide">
+        <img src="/assets/empresas_parceiras/alvesgrill.jpg" />
+        <img src="/assets/empresas_parceiras/anjos.jpg" />
+        <img src="/assets/empresas_parceiras/aqualax.png" />
+        <img src="/assets/empresas_parceiras/baesotti.png" />
+        <img src="/assets/empresas_parceiras/betolidervidro.jpg" />
+        <img class="ginomoto_logo" src="/assets/empresas_parceiras/Design sem nome (6).png" />
+        <img src="/assets/empresas_parceiras/brazao.jpg" />
+        <img src="/assets/empresas_parceiras/central_coberturas.jpg" />
+        <img src="/assets/empresas_parceiras/decora_novaempresa_gianotto.png" />
+        <img src="/assets/empresas_parceiras/delta.jpg" />
+        <img src="/assets/empresas_parceiras/dg.jpg" />
+        <img src="/assets/empresas_parceiras/dimensional.jpg" />
+        <img src="/assets/empresas_parceiras/esquadrigao.jpg" />
+        <img src="/assets/empresas_parceiras/estiloecasa.jpg" />
+        <img src="/assets/empresas_parceiras/florense.jpg" />
+        <img src="/assets/empresas_parceiras/fonteluz.png" />
+        <img src="/assets/empresas_parceiras/gallo.png" />
+        <img src="/assets/empresas_parceiras/ibanez.jpg" />
+        <img src="/assets/empresas_parceiras/img_8319.png" />
+        <img src="/assets/empresas_parceiras/linhadireta.jpg" />
+        <img src="/assets/empresas_parceiras/logo_home_well.jpg" />
+        <img src="/assets/empresas_parceiras/marmorariasilva.jpg" />
+        <img src="/assets/empresas_parceiras/mineralli.jpg" />
+        <img src="/assets/empresas_parceiras/padan.png" />
+        <img src="/assets/empresas_parceiras/pietra_galeria_de_pedras.PNG" />
+        <img src="/assets/empresas_parceiras/pinhatt.png" />
+        <img src="/assets/empresas_parceiras/portobelloshop.jpg" />
+        <img src="/assets/empresas_parceiras/saogeraldo.jpg" />
+        <img src="/assets/empresas_parceiras/segsun.png" />
+        <img src="/assets/empresas_parceiras/solo.png" />
+        <img src="/assets/empresas_parceiras/todacasa.jpg" />
+        <img src="/assets/empresas_parceiras/todeschini.jpeg" />
+        <img src="/assets/empresas_parceiras/tofanelitintas.jpg" />
+        <img src="/assets/empresas_parceiras/uniflex_3.png" />
+        <img src="/assets/empresas_parceiras/vialux.jpg" />
+        <img src="/assets/empresas_parceiras/vivaneiluminacao.jpg" />
+        <img src="/assets/empresas_parceiras/vivendadecoracoes.jpg" />
+        <img src="/assets/empresas_parceiras/wigga.jpg" />
+      </div>
+    </div>
+
+    <!-- Colaboradores -->
+
+    <script src="/script.js"></script>
+  </body>
 </html>
