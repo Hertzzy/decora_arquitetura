@@ -1,5 +1,17 @@
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+
+.spacing-containers {
+  background-color: #755b4b;
+  width: 400px;
+  height: 4px;
+  margin: 0 auto;
+}
+
+.title-container {
+  color: #755b4b;
 }
 
 .c-item {
@@ -15,6 +27,7 @@ body {
 .navbar {
   margin: 5px 70px;
   border-radius: 8px;
+  background-color: transparent;
 }
 
 .btn-outline-secondary:hover {
@@ -114,9 +127,10 @@ body {
   height: 25px;
 }
 
+/* CARDS DESTAQUES */
 .container {
-  max-width: 1200px;
-  width: 95%;
+  max-width: 90%;
+  width: 100%;
 }
 .slider-wrapper {
   position: relative;
@@ -151,7 +165,7 @@ body {
 }
 .slider-wrapper .image-list {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(20, 1fr);
   gap: 18px;
   font-size: 0;
   list-style: none;
@@ -163,19 +177,14 @@ body {
   display: none;
 }
 .slider-wrapper .image-list .image-item {
-  max-width: 325px;
-  height: 400px;
+  max-width: 200px;
+  height: 300px;
   object-fit: cover;
   cursor: pointer;
   transition: 0.9s;
 }
-/* .slider-wrapper .image-list .image-item:hover {
-  opacity: 0.2;
-  transition: 0.9s;
-} */
 
 .container .slider-scrollbar {
-  height: 24px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -241,19 +250,95 @@ body {
 }
 
 .card-text {
-  position: absolute; /* Define o posicionamento absoluto para posicionar o texto */
-  top: 0; /* Alinha o topo do texto com o topo do card-img */
-  left: 0; /* Alinha a esquerda do texto com a esquerda do card-img */
-  background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo para o texto */
-  color: #000; /* Cor do texto */
+  position: absolute;
+  top: 0;
+  left: 0%;
+  background-color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
-  width: 100%; /* Define a largura do texto para preencher todo o card-img */
-  height: 100%; /* Define a altura do texto para preencher todo o card-img */
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
   opacity: 0; /* Torna o texto invisível inicialmente */
-  transition: opacity 0.3s; /* Adiciona uma transição suave */
+  transition: opacity 0.8s; /* Adiciona uma transição suave */
   cursor: pointer;
 }
 
 .card-img:hover .card-text {
   opacity: 1; /* Torna o texto visível quando o mouse passa sobre o card-img */
+}
+
+.card-img .card-text h2 {
+  color: #755b4b;
+}
+
+.card-img .card-text p {
+  color: #555e5e;
+}
+
+/* FOOTER */
+footer {
+  background: #101010;
+  padding: 86px 0;
+}
+.single-content {
+  text-align: center;
+  padding: 115px 0;
+}
+.single-box p {
+  color: #fff;
+  line-height: 1.9;
+}
+.single-box h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.single-box .card-area i {
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.single-box ul {
+  list-style: none;
+  padding: 0;
+}
+.single-box ul li a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 2.5;
+  font-weight: 100;
+}
+.single-box h2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+#basic-addon2 {
+  background: #fe1e4f;
+  color: #fff;
+}
+.socials i {
+  font-size: 18px;
+  margin-right: 15px;
+}
+@media (max-width: 767px) {
+  .single-box {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .single-box {
+    margin-bottom: 50px;
+  }
+}
+
+.social-area svg {
+  color: white;
+  margin: 0 5px;
+}
+
+.section-movie {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
 }
