@@ -2,7 +2,9 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
 }
-
+a {
+  color: transparent;
+}
 .spacing-containers {
   background-color: #755b4b;
   width: 400px;
@@ -15,7 +17,7 @@ body {
 }
 
 .c-item {
-  height: 480px;
+  height: 700px;
 }
 
 .c-img {
@@ -338,7 +340,12 @@ footer {
 }
 
 .section-movie {
-  display: flex;
-  justify-content: baseline;
-  align-items: baseline;
 }
+
+.event-movie {
+  margin: 0 auto;
+}
+.container video {
+  width: 100vw;
+}
+/*  */
